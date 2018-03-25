@@ -1,0 +1,14 @@
+;; db.56.168.129
+;; Reverselookupzone für domainname
+;;
+$TTL 2D
+@       IN      SOA     DNSServer.test.local. (
+                                2018032201      ; Serial
+                                        8H      ; Refresh
+                                        2H      ; Retry
+                                        4W      ; Expire
+                                        2D )    ; TTL Negative Cache
+
+@       IN      NS      DNSServer.test.local.
+
+100     IN      PTR     DNSServer.test.local.
