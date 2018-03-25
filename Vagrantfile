@@ -18,13 +18,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 		
 		
 		sudo apt-get -y install bind9 
-		sudo service bind9 stop
+		#sudo service bind9 stop
 		sudo cp /var/tmp/bind9 /etc/default/bind9
 		sudo cp /var/tmp/db.test.local /etc/bind
 		sudo cp /var/tmp/db.56.168.192 /etc/bind
 		sudo cp /var/tmp/named.conf.local /etc/bind
 		sudo cp /var/tmp/resolv.conf /etc
-		sudo service bind9 start
+		#sudo service bind9 start
 	
 	
 	SHELL
